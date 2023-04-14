@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <title>Atividade 1</title>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+   <script>
+     $(function(){
+
+      $('#b').on('click', function(){
+        var senha = '1';
+        let s = $('#s').val();
+        if(s !== senha) {
+            alert ('Voce errou a senha');
+        }
+      else{
+        $(window.location.href='./segundo.html');
+      }
+    })
+     }) 
+   </script>
+  <body>
+    <h1>Digite sua senha!</h1>
+    <label>Senha:</label>
+    <input type="text" id="s">
+    <button id="b">Entrar</button>
+    </body>
+</head>
+</html>
